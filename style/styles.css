@@ -172,11 +172,11 @@ form button{
 }
 
 /*pag adopta*/
-.mainAdopta a{
+#mainAdopta a{
     color: black;
     font-size: 30px
 }
-.mainAdopta a:hover{
+#mainAdopta a:hover{
     color: coral;
 }
 .imgAdopta{ /*esto hace que la imagen ocupe el ancho de la pagina*/
@@ -189,6 +189,13 @@ form button{
     margin-right: 50px;
 
 }
+@media (min-width:1024px){
+    #mainAdopta section{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
 
 /*pag consejos*/
 .imagen-consejo {
