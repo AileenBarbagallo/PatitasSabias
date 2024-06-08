@@ -1,7 +1,14 @@
 $colorPrimario:rgb(127, 180, 78);
 $colorSecundario:rgb(158, 247, 130);
 $colorTerciario:rgb(110, 181, 255);
-$colorCuatro:rgb(64, 98, 134);
-$colorCinco: coral;
-$colorSeis:rgb(211, 211, 211);
-
+$paletacolores:rgb(64, 98, 134),coral,rgb(211, 211, 211);
+//no utilice extend porq no logre ver nada repetitivo en el css de mas de 2 cosas como explico la profe, iba a poner un extend con solo %displayflex{display:flex;} pero es lo mismo que escribirlo
+@mixin mixdisplay($display,$flexwrap,$justify){
+    display: $display;
+    flex-wrap: $flexwrap;
+    justify-content: $justify;
+}
+@mixin wiandhe($width, $height){
+    width: $width;
+    height: $height;
+}

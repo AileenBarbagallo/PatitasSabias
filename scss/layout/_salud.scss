@@ -7,7 +7,7 @@
     display: block; 
     width: fit-content; 
     &:hover{
-        color: $colorCinco;
+        color: nth($paletacolores, 2);
     }
 }
 .grillasalud{

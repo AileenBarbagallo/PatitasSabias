@@ -13,11 +13,11 @@ button{
     font-weight: bold;
     padding:5px 10px;
     border-radius: 10px;
-    border: 1px $colorSeis;
+    border: 1px nth($paletacolores, 3);
     box-shadow: 2px 2px 10px;
     background-color:$colorTerciario;
     &:hover{
-        background-color: $colorCuatro;
+        background-color: nth($paletacolores, 1);
     }
 }
 h2{
@@ -55,8 +55,7 @@ h2{
     margin-top: 50px;
 }
 .imagenesInicio {
-    width: 500px;
-    height: 500px; 
+    @include wiandhe(500px, 500px);
     object-fit: cover;
 }
 .piedeimgindex{
@@ -74,7 +73,6 @@ h2{
 }
 @media (max-width:425px){
     .imagenesInicio{
-        width:350px;
-        height: 350px;
+        @include wiandhe(350px,350px);
     }
 }

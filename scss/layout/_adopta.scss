@@ -4,12 +4,11 @@
         font-size: 30px
     }
     a:hover{
-        color: $colorCinco;
+        color: nth($paletacolores, 2);
     }
 }
 .imgAdopta{ /*esto hace que la imagen ocupe el ancho de la pagina*/
-    width: 100%; 
-    height: auto;
+    @include wiandhe(100%,auto);
     display: block;
 }
 .textoAdopta{

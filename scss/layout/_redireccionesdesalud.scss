@@ -1,12 +1,11 @@
 .redirecciones-salud{
     margin-left: 200px;
     margin-right: 200px;
-    background-color: $colorSeis;
+    background-color: nth($paletacolores, 2);
     padding: 10px;
 }
 .img-banner-salud{
-    width: 100%; 
-    height: 300px;
+    @include wiandhe(100%,300px);
     display: block;
     object-fit: cover;
 }
@@ -21,8 +20,7 @@
     margin-bottom: 50px;
 }
 .imgSalud{
-    width: 100%; 
-    height: 800px;
+    @include wiandhe(100%, 800px);
     display: block;
     object-fit: cover;
 }

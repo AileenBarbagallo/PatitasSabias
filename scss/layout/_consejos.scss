@@ -1,7 +1,6 @@
 
 .imagen-consejo {
-    width: 300px; 
-    height: 200px; 
+    @include wiandhe(300px,200px);
     border-radius: 30%;
     object-fit: cover;
 }
@@ -18,9 +17,7 @@
 .containflexconsejos{
     margin-left: 50px;
     margin-right: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include mixdisplay(flex,wrap,space-between);
 }
 @media (min-width: 768px) and (max-width: 1169px){
     .contain-consejos{
@@ -35,7 +32,6 @@
         width: 100%;
     }
     .imagen-consejo{
-        width: 90%;
-        height: auto;
+        @include wiandhe(90%,auto);
     }
 }
