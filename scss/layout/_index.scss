@@ -1,0 +1,80 @@
+#textoSobreBanner{
+    background-image: url(../assets/bannerinicio.jpg);
+    background-position: center;
+    background-size:cover;
+    padding: 10%;
+    padding-left: 60%;
+    button{
+        margin-left: 40%;
+    }
+}
+button{
+    font-size: 20px;
+    font-weight: bold;
+    padding:5px 10px;
+    border-radius: 10px;
+    border: 1px $colorSeis;
+    box-shadow: 2px 2px 10px;
+    background-color:$colorTerciario;
+    &:hover{
+        background-color: $colorCuatro;
+    }
+}
+h2{
+    text-align: center;
+}
+@media (max-width:768px){
+    #textoSobreBanner{
+        background-image: none;
+        background-color:$colorSecundario;
+        padding: 10%;
+    }
+    #textoSobreBanner button{
+        margin-top: 20px;
+    }
+}
+h2{
+    background-color: $colorTerciario;
+    padding: 15px;
+    text-align: start;
+}
+.h2deindex{
+    background-color: transparent;
+}
+.contenedorFlex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inicioSalud, .inicioConsejos {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.imagenesInicio {
+    width: 500px;
+    height: 500px; 
+    object-fit: cover;
+}
+.piedeimgindex{
+    margin: 20px;
+    font-weight: 600;
+}
+@media(max-width: 1024px){
+    .bloquesInicio{
+        flex-direction:column;
+    }
+    .inicioConsejos{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:425px){
+    .imagenesInicio{
+        width:350px;
+        height: 350px;
+    }
+}

@@ -1,0 +1,41 @@
+
+.imagen-consejo {
+    width: 300px; 
+    height: 200px; 
+    border-radius: 30%;
+    object-fit: cover;
+}
+.contain-consejos{
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: solid $colorPrimario;
+    border-radius: 10%;
+    margin: 10px;
+    background-color: $colorPrimario;
+}
+.containflexconsejos{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (min-width: 768px) and (max-width: 1169px){
+    .contain-consejos{
+        width: 45%;
+    }
+    .imagen-consejo{
+        width:80%
+    }
+}
+@media (max-width: 768px){
+    .contain-consejos{
+        width: 100%;
+    }
+    .imagen-consejo{
+        width: 90%;
+        height: auto;
+    }
+}

@@ -1,0 +1,21 @@
+.bloqueContacto{
+    width:50%;
+    background-color: $colorTerciario;
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.h3contacto{
+    margin-top: 100px;
+}
+@media (max-width:768px){
+    .bloqueContacto{
+        width: 80%;
+    }
+}
+@media (max-width:425px){
+    .bloqueContacto{
+        width: 100%;
+    }
+}

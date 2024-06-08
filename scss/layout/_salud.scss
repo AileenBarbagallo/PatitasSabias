@@ -1,0 +1,19 @@
+#botonLeerMas {
+    font-weight: 500;
+    background-color: $colorPrimario;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px auto; 
+    display: block; 
+    width: fit-content; 
+    &:hover{
+        color: $colorCinco;
+    }
+}
+.grillasalud{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.img-fluid{
+    border-radius: 30%;
+}

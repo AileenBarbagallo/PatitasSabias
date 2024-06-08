@@ -1,0 +1,24 @@
+#mainAdopta{
+    a{ 
+        color: black;
+        font-size: 30px
+    }
+    a:hover{
+        color: $colorCinco;
+    }
+}
+.imgAdopta{ /*esto hace que la imagen ocupe el ancho de la pagina*/
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+.textoAdopta{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+@media (min-width:1024px){
+    #mainAdopta section{
+    margin-left: 200px;
+    margin-right: 200px;
+    }
+}

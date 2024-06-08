@@ -1,0 +1,41 @@
+.redirecciones-salud{
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: $colorSeis;
+    padding: 10px;
+}
+.img-banner-salud{
+    width: 100%; 
+    height: 300px;
+    display: block;
+    object-fit: cover;
+}
+.pie-de-img{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.videosSalud{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.imgSalud{
+    width: 100%; 
+    height: 800px;
+    display: block;
+    object-fit: cover;
+}
+@media (max-width:990px){
+    .redirecciones-salud{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+.itemsh4{
+    position: relative;
+    &::before {
+        content: "\2022"; /* Código para el punto (•) */
+        margin-right: 0.5em; /* Espacio entre el marcador y el texto */
+    }
+}

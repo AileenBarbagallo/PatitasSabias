@@ -1,0 +1,320 @@
+@charset "UTF-8";
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: url(../assets/background.webp);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 50px;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(127, 180, 78);
+}
+
+.navbar-toggler-icon:hover {
+  color: rgb(158, 247, 130);
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-bottom: 0%;
+  }
+}
+/*footer*/
+footer {
+  background-color: rgb(127, 180, 78);
+  text-align: center;
+  padding: 5%;
+}
+
+.textoFooter {
+  color: black;
+  font-size: large;
+}
+
+form input {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(127, 180, 78);
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+form button {
+  color: black;
+}
+
+#textoSobreBanner {
+  background-image: url(../assets/bannerinicio.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10%;
+  padding-left: 60%;
+}
+#textoSobreBanner button {
+  margin-left: 40%;
+}
+
+button {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 1px rgb(211, 211, 211);
+  box-shadow: 2px 2px 10px;
+  background-color: rgb(110, 181, 255);
+}
+button:hover {
+  background-color: rgb(64, 98, 134);
+}
+
+h2 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #textoSobreBanner {
+    background-image: none;
+    background-color: rgb(158, 247, 130);
+    padding: 10%;
+  }
+  #textoSobreBanner button {
+    margin-top: 20px;
+  }
+}
+h2 {
+  background-color: rgb(110, 181, 255);
+  padding: 15px;
+  text-align: start;
+}
+
+.h2deindex {
+  background-color: transparent;
+}
+
+.contenedorFlex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.inicioSalud, .inicioConsejos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.imagenesInicio {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.piedeimgindex {
+  margin: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .bloquesInicio {
+    flex-direction: column;
+  }
+  .inicioConsejos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 425px) {
+  .imagenesInicio {
+    width: 350px;
+    height: 350px;
+  }
+}
+#mainAdopta a {
+  color: black;
+  font-size: 30px;
+}
+#mainAdopta a:hover {
+  color: coral;
+}
+
+.imgAdopta { /*esto hace que la imagen ocupe el ancho de la pagina*/
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.textoAdopta {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+@media (min-width: 1024px) {
+  #mainAdopta section {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+#botonLeerMas {
+  font-weight: 500;
+  background-color: rgb(127, 180, 78);
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: block;
+  width: fit-content;
+}
+#botonLeerMas:hover {
+  color: coral;
+}
+
+.grillasalud {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.img-fluid {
+  border-radius: 30%;
+}
+
+.imagen-consejo {
+  width: 300px;
+  height: 200px;
+  border-radius: 30%;
+  object-fit: cover;
+}
+
+.contain-consejos {
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  border: solid rgb(127, 180, 78);
+  border-radius: 10%;
+  margin: 10px;
+  background-color: rgb(127, 180, 78);
+}
+
+.containflexconsejos {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) and (max-width: 1169px) {
+  .contain-consejos {
+    width: 45%;
+  }
+  .imagen-consejo {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .contain-consejos {
+    width: 100%;
+  }
+  .imagen-consejo {
+    width: 90%;
+    height: auto;
+  }
+}
+.bloqueContacto {
+  width: 50%;
+  background-color: rgb(110, 181, 255);
+  padding: 50px;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.h3contacto {
+  margin-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .bloqueContacto {
+    width: 80%;
+  }
+}
+@media (max-width: 425px) {
+  .bloqueContacto {
+    width: 100%;
+  }
+}
+.redirecciones-salud {
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: rgb(211, 211, 211);
+  padding: 10px;
+}
+
+.img-banner-salud {
+  width: 100%;
+  height: 300px;
+  display: block;
+  object-fit: cover;
+}
+
+.pie-de-img {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.videosSalud {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.imgSalud {
+  width: 100%;
+  height: 800px;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 990px) {
+  .redirecciones-salud {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+.itemsh4 {
+  position: relative;
+}
+.itemsh4::before {
+  content: "•"; /* Código para el punto (•) */
+  margin-right: 0.5em; /* Espacio entre el marcador y el texto */
+}
+
+/*# sourceMappingURL=styles.css.map */
