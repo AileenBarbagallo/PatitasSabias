@@ -1,13 +1,19 @@
 .bloqueContacto{
     width:50%;
-    background-color: $colorTerciario;
+    background-image: linear-gradient(50deg, $colorTerciario, $colorSecundario);
     padding: 50px;
     border-radius: 20px;
     margin-top: 50px;
     margin-bottom: 100px;
 }
+
 .h3contacto{
     margin-top: 100px;
+    background-color: nth($paletacolores, 3);
+    padding: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 25px;
 }
 @media (max-width:768px){
     .bloqueContacto{

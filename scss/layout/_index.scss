@@ -8,6 +8,9 @@
         margin-left: 40%;
     }
 }
+.h2deindex{
+    background-image: none;
+}
 button{
     font-size: 20px;
     font-weight: bold;
@@ -34,7 +37,7 @@ h2{
     }
 }
 h2{
-    background-color: $colorTerciario;
+    background-image: linear-gradient(to left, $colorTerciario, $colorSecundario);
     padding: 15px;
     text-align: start;
 }
@@ -53,6 +56,8 @@ h2{
     text-align: center; 
     margin-bottom: 50px;
     margin-top: 50px;
+    animation: fadeInOut 2s; /* Aplica la animación */
+    animation-delay: 1ms;
 }
 .imagenesInicio {
     @include wiandhe(500px, 500px);

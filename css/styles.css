@@ -24,7 +24,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  background-color: rgb(127, 180, 78);
+  background-image: linear-gradient(to right, rgb(127, 180, 78), rgb(158, 247, 130));
 }
 
 .navbar-toggler-icon:hover {
@@ -38,7 +38,7 @@ body {
 }
 /*footer*/
 footer {
-  background-color: rgb(127, 180, 78);
+  background-image: linear-gradient(to bottom, rgb(127, 180, 78), rgb(158, 247, 130));
   text-align: center;
   padding: 5%;
 }
@@ -68,6 +68,24 @@ form button {
   color: black;
 }
 
+button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.9);
+  }
+}
 #textoSobreBanner {
   background-image: url(../assets/bannerinicio.jpg);
   background-position: center;
@@ -77,6 +95,10 @@ form button {
 }
 #textoSobreBanner button {
   margin-left: 40%;
+}
+
+.h2deindex {
+  background-image: none;
 }
 
 button {
@@ -107,7 +129,7 @@ h2 {
   }
 }
 h2 {
-  background-color: rgb(110, 181, 255);
+  background-image: linear-gradient(to left, rgb(110, 181, 255), rgb(158, 247, 130));
   padding: 15px;
   text-align: start;
 }
@@ -129,6 +151,8 @@ h2 {
   text-align: center;
   margin-bottom: 50px;
   margin-top: 50px;
+  animation: fadeInOut 2s; /* Aplica la animación */
+  animation-delay: 1ms;
 }
 
 .imagenesInicio {
@@ -220,6 +244,8 @@ h2 {
   border-radius: 10%;
   margin: 10px;
   background-color: rgb(127, 180, 78);
+  animation: fadeInOut 2s; /* Aplica la animación */
+  animation-delay: 1ms;
 }
 
 .containflexconsejos {
@@ -249,7 +275,7 @@ h2 {
 }
 .bloqueContacto {
   width: 50%;
-  background-color: rgb(110, 181, 255);
+  background-image: linear-gradient(50deg, rgb(110, 181, 255), rgb(158, 247, 130));
   padding: 50px;
   border-radius: 20px;
   margin-top: 50px;
@@ -258,6 +284,11 @@ h2 {
 
 .h3contacto {
   margin-top: 100px;
+  background-color: rgb(211, 211, 211);
+  padding: 50px;
+  margin-left: 400px;
+  margin-right: 400px;
+  border-radius: 25px;
 }
 
 @media (max-width: 768px) {
@@ -273,7 +304,7 @@ h2 {
 .redirecciones-salud {
   margin-left: 200px;
   margin-right: 200px;
-  background-color: coral;
+  background-image: linear-gradient(to top, rgb(110, 181, 255), rgb(211, 211, 211));
   padding: 10px;
 }
 

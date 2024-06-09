@@ -4,6 +4,7 @@
     border-radius: 30%;
     object-fit: cover;
 }
+
 .contain-consejos{
     width: 30%;
     padding: 10px;
@@ -13,6 +14,8 @@
     border-radius: 10%;
     margin: 10px;
     background-color: $colorPrimario;
+    animation: fadeInOut 2s; /* Aplica la animación */
+    animation-delay: 1ms;
 }
 .containflexconsejos{
     margin-left: 50px;

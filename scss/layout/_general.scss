@@ -20,7 +20,7 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
-    background-color: $colorPrimario;
+    background-image: linear-gradient(to right, $colorPrimario, $colorSecundario);
 }
 .navbar-toggler-icon:hover{
     color: $colorSecundario;
@@ -32,7 +32,7 @@ body{
 }
 /*footer*/
 footer{
-    background-color: $colorPrimario;
+    background-image: linear-gradient(to bottom, $colorPrimario, $colorSecundario);
     text-align: center;
     padding: 5%;
 }
@@ -56,4 +56,24 @@ p{
 }
 form button{
     color:black;
+}
+
+//general
+
+button:hover{
+    transform: scale(1.1);
+}
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
 }
