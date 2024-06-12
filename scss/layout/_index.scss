@@ -56,8 +56,6 @@ h2{
     text-align: center; 
     margin-bottom: 50px;
     margin-top: 50px;
-    animation: fadeInOut 2s; /* Aplica la animación */
-    animation-delay: 1ms;
 }
 .imagenesInicio {
     @include wiandhe(500px, 500px);
