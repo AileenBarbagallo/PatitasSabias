@@ -167,6 +167,7 @@ h2 {
 @media (max-width: 1024px) {
   .bloquesInicio {
     flex-direction: column;
+    margin: 0;
   }
   .inicioConsejos {
     margin-top: 20px;
@@ -175,10 +176,15 @@ h2 {
 }
 @media (max-width: 425px) {
   .imagenesInicio {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
+    margin: 0;
   }
 }
+html, body {
+  overflow-x: hidden; /* Evita el scrolleo lateral */
+}
+
 #mainAdopta a {
   color: black;
   font-size: 30px;
